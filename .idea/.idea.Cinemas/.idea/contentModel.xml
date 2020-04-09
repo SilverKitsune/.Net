@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Allo4ka\.nuget\packages\microsoft.net.test.sdk\16.4.0\build\netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\Allo4ka\.nuget\packages\microsoft.testplatform.testhost\16.4.0\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\Allo4ka\.nuget\packages\microsoft.testplatform.testhost\16.4.0\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\Allo4ka\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.api.dll" t="Include" />
+    <e p="C:\Users\Allo4ka\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\nunit.engine.dll" t="Include" />
+    <e p="C:\Users\Allo4ka\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.dll" t="Include" />
+    <e p="C:\Users\Allo4ka\.nuget\packages\nunit3testadapter\3.15.1\build\netcoreapp2.0\NUnit3.TestAdapter.pdb" t="Include" />
+    <e p="C:\Users\Allo4ka\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Allo4ka\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Cinemas.2084867745.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Allo4ka\RiderProjects\Cinemas" t="IncludeFlat">
+      <e p="Cinemas.BLL" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Cinemas.BLL.csproj" t="IncludeRecursive" />
+        <e p="Contracts" t="Include">
+          <e p="ICinemaCreateService.cs" t="Include" />
+          <e p="ICinemaGetService.cs" t="Include" />
+          <e p="ICinemaUpdateService.cs" t="Include" />
+          <e p="IMovieCreateService.cs" t="Include" />
+          <e p="IMovieGetService.cs" t="Include" />
+          <e p="IMovieUpdateService.cs" t="Include" />
+          <e p="IScreeningCreateService.cs" t="Include" />
+          <e p="IScreeningGetService.cs" t="Include" />
+          <e p="IScreeningUpdateService.cs" t="Include" />
+        </e>
+        <e p="Implementation" t="Include">
+          <e p="CinemaCreateService.cs" t="Include" />
+          <e p="CinemaGetService.cs" t="Include" />
+          <e p="CinemaUpdateService.cs" t="Include" />
+          <e p="MovieCreateService.cs" t="Include" />
+          <e p="MovieGetService.cs" t="Include" />
+          <e p="MovieUpdateService.cs" t="Include" />
+          <e p="ScreeningCreateService.cs" t="Include" />
+          <e p="ScreeningGetService.cs" t="Include" />
+          <e p="ScreeningUpdateService.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Cinemas.BLL.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Cinemas.BLL.Tests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Cinemas.BLL.Tests.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Cinemas.BLL.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="UnitTest1.cs" t="Include" />
+      </e>
+      <e p="Cinemas.DataAccess" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Cinemas.DataAccess.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Cinemas.DataAccess.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Cinemas.Domain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Cinema.cs" t="Include" />
+        <e p="Cinemas.Domain.csproj" t="IncludeRecursive" />
+        <e p="Contracts" t="Include">
+          <e p="ICinemaContainer.cs" t="Include" />
+          <e p="ICinemaIdentity.cs" t="Include" />
+          <e p="IMovieContainer.cs" t="Include" />
+          <e p="IMovieIdentity.cs" t="Include" />
+          <e p="IScreeningIdentity.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="CinemaIdentityModel.cs" t="Include" />
+          <e p="CinemaUpdateModel.cs" t="Include" />
+          <e p="MovieIdentityModel.cs" t="Include" />
+          <e p="MovieUpdateModel.cs" t="Include" />
+          <e p="ScreeningIdentityModel.cs" t="Include" />
+          <e p="ScreeningUpdateModel.cs" t="Include" />
+        </e>
+        <e p="Movie.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Cinemas.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Screening.cs" t="Include" />
+      </e>
+      <e p="Cinemas.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

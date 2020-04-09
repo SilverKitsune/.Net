@@ -1,0 +1,86 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Cinemas.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Cinemas.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinemas.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cinemas.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Cinemas.Domain/Cinemas.Domain.csproj",
+      "msbuildProject": "../Cinemas.Domain/Cinemas.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Cinemas.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Allo4ka\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.BLL\\Cinemas.BLL.csproj",
+      "projectName": "Cinemas.BLL",
+      "projectPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.BLL\\Cinemas.BLL.csproj",
+      "packagesPath": "C:\\Users\\Allo4ka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.BLL\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Allo4ka\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.Domain\\Cinemas.Domain.csproj": {
+              "projectPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.Domain\\Cinemas.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Users\\Allo4ka\\.dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
