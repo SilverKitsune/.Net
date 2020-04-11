@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Cinemas.BLL.Contracts;
+using Cinemas.DataAccess.Contracts;
 using Cinemas.Domain;
 using Cinemas.Domain.Models;
 
@@ -7,9 +8,21 @@ namespace Cinemas.BLL.Implementation
 {
     public class MovieUpdateService : IMovieUpdateService
     {
-        public Task<Movie> UpdateAsync(MovieUpdateModel movie)
+        private IMovieDataAccess MovieDataAccess { get; }
+        private IScreeningGetService ScreeningGetService { get; }
+
+        public MovieUpdateService(IMovieDataAccess screeningDataAccess, IScreeningGetService screeningGetService)
         {
-            throw new System.NotImplementedException();
+            MovieDataAccess = screeningDataAccess;
+            ScreeningGetService = screeningGetService;
+        }
+
+        public async Task<Movie> UpdateAsync(MovieUpdateModel movie)
+        {
+            await ScreeningGetService.ValidateAsync(movie);
+
+            return await MovieDataAccess.InsertAsync(movie);
+
         }
     }
 }

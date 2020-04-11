@@ -15,6 +15,9 @@
     "frameworks": {
       "netcoreapp3.1": {
         "projectReferences": {
+          "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.DataAccess\\Cinemas.DataAccess.csproj": {
+            "projectPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.DataAccess\\Cinemas.DataAccess.csproj"
+          },
           "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.Domain\\Cinemas.Domain.csproj": {
             "projectPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.Domain\\Cinemas.Domain.csproj"
           }
@@ -29,6 +32,16 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "Microsoft.EntityFrameworkCore.Analyzers": {
+          "target": "Package",
+          "version": "[5.0.0-preview.2.20159.4, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools": {
+          "target": "Package",
+          "version": "[5.0.0-preview.2.20159.4, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",

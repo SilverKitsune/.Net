@@ -25,6 +25,9 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
+              "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.DataAccess\\Cinemas.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.DataAccess\\Cinemas.DataAccess.csproj"
+              },
               "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.Domain\\Cinemas.Domain.csproj": {
                 "projectPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.Domain\\Cinemas.Domain.csproj"
               }
@@ -39,6 +42,96 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20159.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20159.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Allo4ka\\.dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.DataAccess\\Cinemas.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.DataAccess\\Cinemas.DataAccess.csproj",
+        "projectName": "Cinemas.DataAccess",
+        "projectPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.DataAccess\\Cinemas.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Allo4ka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Allo4ka\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.Domain\\Cinemas.Domain.csproj": {
+                "projectPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.Domain\\Cinemas.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20159.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20159.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20159.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20159.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20159.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -89,6 +182,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[5.0.0-preview.2.20159.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

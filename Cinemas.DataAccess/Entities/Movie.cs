@@ -1,10 +1,12 @@
-﻿using Cinemas.Domain.Contracts;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Cinemas.Domain
+namespace Cinemas.DataAccess.Entities
 {
-    //Информация о фильме
-    public class Movie : IScreeningContainer
+    public class Movie
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         //идентификатор
         public int Id { get; set; }
         
@@ -19,8 +21,8 @@ namespace Cinemas.Domain
 
         //Возрастное ограничение
         public int Age { get; set; }
-        
+
         public int? ScreeningId => Screening.Id;
-        public Screening Screening { get; set; }
+        public virtual Screening Screening { get; set; }
     }
 }

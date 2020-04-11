@@ -48,7 +48,9 @@
       </e>
       <e p="Cinemas.BLL.Tests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="CinemaGetServiceTests.cs" t="Include" />
         <e p="Cinemas.BLL.Tests.csproj" t="IncludeRecursive" />
+        <e p="MovieGetServiceTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -56,11 +58,32 @@
             </e>
           </e>
         </e>
+        <e p="ScreeningCreateServiceTests.cs" t="Include" />
+        <e p="ScreeningGetServiceTests .cs" t="Include" />
+        <e p="ScreeningUpdateServiceTests .cs" t="Include" />
         <e p="UnitTest1.cs" t="Include" />
       </e>
       <e p="Cinemas.DataAccess" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Cinemas.DataAccess.csproj" t="IncludeRecursive" />
+        <e p="Context" t="Include">
+          <e p="CinemaContext.cs" t="Include" />
+        </e>
+        <e p="Contracts" t="Include">
+          <e p="ICinemaDataAccess.cs" t="Include" />
+          <e p="IMovieDataAccess.cs" t="Include" />
+          <e p="IScreeningDataAccess.cs" t="Include" />
+        </e>
+        <e p="Entities" t="Include">
+          <e p="Cinema.cs" t="Include" />
+          <e p="Movie.cs" t="Include" />
+          <e p="Screening.cs" t="Include" />
+        </e>
+        <e p="Implementations" t="Include">
+          <e p="CinemaDataAccess.cs" t="Include" />
+          <e p="MovieDataAccess.cs" t="Include" />
+          <e p="ScreeningDataAccess.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -78,6 +101,7 @@
           <e p="ICinemaIdentity.cs" t="Include" />
           <e p="IMovieContainer.cs" t="Include" />
           <e p="IMovieIdentity.cs" t="Include" />
+          <e p="IScreeningContainer.cs" t="Include" />
           <e p="IScreeningIdentity.cs" t="Include" />
         </e>
         <e p="Models" t="Include">

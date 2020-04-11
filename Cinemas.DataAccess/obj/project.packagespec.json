@@ -14,7 +14,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.Domain\\Cinemas.Domain.csproj": {
+            "projectPath": "C:\\Users\\Allo4ka\\RiderProjects\\Cinemas\\Cinemas.Domain\\Cinemas.Domain.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -25,6 +29,32 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "AutoMapper": {
+          "target": "Package",
+          "version": "[9.0.0, )"
+        },
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[5.0.0-preview.2.20159.4, )"
+        },
+        "Microsoft.EntityFrameworkCore.Analyzers": {
+          "target": "Package",
+          "version": "[5.0.0-preview.2.20159.4, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "target": "Package",
+          "version": "[5.0.0-preview.2.20159.4, )"
+        },
+        "Microsoft.EntityFrameworkCore.SqlServer": {
+          "target": "Package",
+          "version": "[5.0.0-preview.2.20159.4, )"
+        },
+        "Microsoft.EntityFrameworkCore.Tools": {
+          "target": "Package",
+          "version": "[5.0.0-preview.2.20159.4, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",

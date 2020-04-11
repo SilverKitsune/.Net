@@ -9,5 +9,6 @@ namespace Cinemas.BLL.Contracts
     {
         Task<IEnumerable<Cinema>> GetAsync();
         Task<Cinema> GetAsync(ICinemaIdentity cinema);
+        Task ValidateAsync(ICinemaContainer departmentContainer);
     }
 }

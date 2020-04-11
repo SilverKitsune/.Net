@@ -5,7 +5,13 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Cinemas.DataAccess\Cinemas.DataAccess.csproj" />
       <ProjectReference Include="..\Cinemas.Domain\Cinemas.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="5.0.0-preview.2.20159.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0-preview.2.20159.4" />
     </ItemGroup>
 
 </Project>
