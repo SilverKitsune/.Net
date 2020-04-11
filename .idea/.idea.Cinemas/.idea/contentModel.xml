@@ -61,7 +61,6 @@
         <e p="ScreeningCreateServiceTests.cs" t="Include" />
         <e p="ScreeningGetServiceTests .cs" t="Include" />
         <e p="ScreeningUpdateServiceTests .cs" t="Include" />
-        <e p="UnitTest1.cs" t="Include" />
       </e>
       <e p="Cinemas.DataAccess" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />

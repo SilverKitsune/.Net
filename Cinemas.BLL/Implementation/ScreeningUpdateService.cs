@@ -25,7 +25,7 @@ namespace Cinemas.BLL.Implementation
             await MovieGetService.ValidateAsync(screening);
             await CinemaGetService.ValidateAsync(screening);
 
-            return await ScreeningDataAccess.InsertAsync(screening);
+            return await ScreeningDataAccess.UpdateAsync(screening);
 
         }
     }

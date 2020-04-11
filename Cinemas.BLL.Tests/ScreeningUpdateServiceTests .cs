@@ -28,7 +28,7 @@ namespace Cinemas.BLL.Tests
             movieGetService.Setup(x => x.ValidateAsync(screening));
 
             var screeningDataAccess = new Mock<IScreeningDataAccess>();
-            screeningDataAccess.Setup(x => x.InsertAsync(screening)).ReturnsAsync(expected);
+            screeningDataAccess.Setup(x => x.UpdateAsync(screening)).ReturnsAsync(expected);
             
             var screeningGetService = new ScreeningUpdateService(screeningDataAccess.Object, cinemaGetService.Object, movieGetService.Object);
             
@@ -65,7 +65,7 @@ namespace Cinemas.BLL.Tests
             
             // Assert
             await action.Should().ThrowAsync<InvalidOperationException>().WithMessage(expected);
-            screeningDataAccess.Verify(x => x.InsertAsync(screening), Times.Never);
+            screeningDataAccess.Verify(x => x.UpdateAsync(screening), Times.Never);
         }
     }
 }
