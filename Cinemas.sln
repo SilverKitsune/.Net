@@ -8,6 +8,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinemas.DataAccess", "Cinem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinemas.BLL.Tests", "Cinemas.BLL.Tests\Cinemas.BLL.Tests.csproj", "{BD484F71-FE69-4E25-845F-F93D29587443}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinemas.Client", "Cinemas.Client\Cinemas.Client.csproj", "{714386B6-94F1-4197-801A-15CD3766119A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinemas.WebAPI", "Cinemas.WebAPI\Cinemas.WebAPI.csproj", "{59A9F82E-9A48-4A74-9E21-9351542E7557}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{BD484F71-FE69-4E25-845F-F93D29587443}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD484F71-FE69-4E25-845F-F93D29587443}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD484F71-FE69-4E25-845F-F93D29587443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714386B6-94F1-4197-801A-15CD3766119A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714386B6-94F1-4197-801A-15CD3766119A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714386B6-94F1-4197-801A-15CD3766119A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714386B6-94F1-4197-801A-15CD3766119A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A9F82E-9A48-4A74-9E21-9351542E7557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A9F82E-9A48-4A74-9E21-9351542E7557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A9F82E-9A48-4A74-9E21-9351542E7557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A9F82E-9A48-4A74-9E21-9351542E7557}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
