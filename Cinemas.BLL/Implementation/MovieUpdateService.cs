@@ -15,9 +15,9 @@ namespace Cinemas.BLL.Implementation
             MovieDataAccess = screeningDataAccess;
         }
 
-        public async Task<Movie> UpdateAsync(MovieUpdateModel movie)
+        public Task<Movie> UpdateAsync(MovieUpdateModel movie)
         {
-            return await MovieDataAccess.UpdateAsync(movie);
+            return MovieDataAccess.UpdateAsync(movie);
         }
     }
 }

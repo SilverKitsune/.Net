@@ -41,9 +41,9 @@ namespace Cinemas.BLL.Implementation
                 throw new InvalidOperationException($"Cinema not found by id {cinemaContainer.CinemaId}");
             }
         }
-        private async Task<Cinema> GetBy(ICinemaContainer cinemaContainer)
+        private Task<Cinema> GetBy(ICinemaContainer cinemaContainer)
         {
-            return await this.CinemaDataAccess.GetByAsync(cinemaContainer);
+            return this.CinemaDataAccess.GetByAsync(cinemaContainer);
         }
     }
 }

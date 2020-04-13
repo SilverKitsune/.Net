@@ -15,9 +15,9 @@ namespace Cinemas.BLL.Implementation
             CinemaDataAccess = cinemaDataAccess;
         }
 
-        public async Task<Cinema> UpdateAsync(CinemaUpdateModel cinema)
+        public Task<Cinema> UpdateAsync(CinemaUpdateModel cinema)
         {
-            return await CinemaDataAccess.UpdateAsync(cinema);
+            return CinemaDataAccess.UpdateAsync(cinema);
         }
     }
 }

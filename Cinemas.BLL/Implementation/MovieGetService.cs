@@ -40,9 +40,9 @@ namespace Cinemas.BLL.Implementation
                 throw new InvalidOperationException($"Screening not found by id {movieContainer.MovieId}");
             }
         }
-        private async Task<Movie> GetBy(IMovieContainer departmentContainer)
+        private Task<Movie> GetBy(IMovieContainer departmentContainer)
         {
-            return await this.MovieDataAccess.GetByAsync(departmentContainer);
+            return this.MovieDataAccess.GetByAsync(departmentContainer);
         }
     }
 }
