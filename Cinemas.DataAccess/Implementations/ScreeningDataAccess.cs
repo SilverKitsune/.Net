@@ -23,7 +23,7 @@ namespace Cinemas.DataAccess.Implementations
 
         public async Task<Screening> InsertAsync(ScreeningUpdateModel screening)
         {
-            var result = await this.Context.AddAsync(this.Mapper.Map<Screening>(screening));
+            var result = await this.Context.AddAsync(this.Mapper.Map<DataAccess.Entities.Screening>(screening));
             await this.Context.SaveChangesAsync();
             return this.Mapper.Map<Screening>(result.Entity);
         }

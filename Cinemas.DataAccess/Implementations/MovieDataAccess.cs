@@ -24,7 +24,7 @@ namespace Cinemas.DataAccess.Implementations
 
         public async Task<Movie> InsertAsync(MovieUpdateModel movie)
         {
-            var result = await this.Context.AddAsync(this.Mapper.Map<Movie>(movie));
+            var result = await this.Context.AddAsync(this.Mapper.Map<DataAccess.Entities.Movie>(movie));
 
             await this.Context.SaveChangesAsync();
 
@@ -34,8 +34,7 @@ namespace Cinemas.DataAccess.Implementations
         public async Task<IEnumerable<Movie>> GetAsync()
         {
             return this.Mapper.Map<IEnumerable<Movie>>(
-                await this.Context.Movie.Include(x => x.Screening).ToListAsync());
-
+                await this.Context.Movie.ToListAsync());
         }
 
         public async Task<Movie> GetAsync(IMovieIdentity movie)
@@ -69,7 +68,7 @@ namespace Cinemas.DataAccess.Implementations
         {
             if(movie == null)
                 throw new ArgumentNullException(nameof(movie));
-            return await this.Context.Movie.Include(x => x.Screening).FirstOrDefaultAsync(x => x.Id == movie.Id);
+            return await this.Context.Movie.FirstOrDefaultAsync(x => x.Id == movie.Id);
         }
     }
 }

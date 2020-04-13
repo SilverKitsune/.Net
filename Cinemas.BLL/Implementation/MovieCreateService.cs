@@ -10,20 +10,15 @@ namespace Cinemas.BLL.Implementation
     public class MovieCreateService : IMovieCreateService
     {
         private IMovieDataAccess MovieDataAccess { get; }
-        //private IScreeningGetService ScreeningGetService { get; }
 
-        public MovieCreateService(IMovieDataAccess screeningDataAccess, IScreeningGetService screeningGetService)
+        public MovieCreateService(IMovieDataAccess screeningDataAccess)
         {
             MovieDataAccess = screeningDataAccess;
-          //  ScreeningGetService = screeningGetService;
         }
 
         public async Task<Movie> CreateAsync(MovieUpdateModel movie)
         {
-           // await ScreeningGetService.ValidateAsync(movie);
-
             return await MovieDataAccess.InsertAsync(movie);
-
         }
     }
 }

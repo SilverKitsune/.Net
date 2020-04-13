@@ -2,7 +2,7 @@
 
 namespace Cinemas.Domain.Models
 {
-    public class MovieUpdateModel : IMovieIdentity, IScreeningContainer
+    public class MovieUpdateModel : IMovieIdentity
     {
         public int Id { get; set; }
 
@@ -17,7 +17,5 @@ namespace Cinemas.Domain.Models
 
         //Возрастное ограничение
         public int Age { get; set; }
-
-        public int? ScreeningId { get; set; }
     }
 }

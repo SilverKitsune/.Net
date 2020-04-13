@@ -3,7 +3,7 @@
 namespace Cinemas.Domain
 {
     //Информация о фильме
-    public class Movie : IScreeningContainer
+    public class Movie 
     {
         //идентификатор
         public int Id { get; set; }
@@ -19,8 +19,5 @@ namespace Cinemas.Domain
 
         //Возрастное ограничение
         public int Age { get; set; }
-        
-        public int? ScreeningId => Screening.Id;
-        public Screening Screening { get; set; }
     }
 }

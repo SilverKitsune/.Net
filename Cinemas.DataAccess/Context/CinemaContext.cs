@@ -51,8 +51,7 @@ namespace Cinemas.DataAccess.Context
                         .HasForeignKey(s => s.CinemaId)
                         .HasConstraintName("FK_Screening_Cinema");
                     entity.HasOne(s => s.Movie)
-                        .WithOne(m => m.Screening)
-                        .HasForeignKey<Movie>(s => s.Screening)
+                        .WithMany(m => m.Screenings).HasForeignKey(s=>s.MovieId)
                         .HasConstraintName("FK_Screening_Movie");
                 });
             

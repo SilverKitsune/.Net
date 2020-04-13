@@ -9,20 +9,15 @@ namespace Cinemas.BLL.Implementation
     public class CinemaUpdateService : ICinemaUpdateService
     {
         private ICinemaDataAccess CinemaDataAccess { get; }
-        private IScreeningGetService ScreeningGetService { get; }
 
-        public CinemaUpdateService(ICinemaDataAccess cinemaDataAccess)//, IScreeningGetService screeningGetService)
+        public CinemaUpdateService(ICinemaDataAccess cinemaDataAccess)
         {
             CinemaDataAccess = cinemaDataAccess;
-            //ScreeningGetService = screeningGetService;
         }
 
         public async Task<Cinema> UpdateAsync(CinemaUpdateModel cinema)
         {
-            //await ScreeningGetService.ValidateAsync(cinema);
-
             return await CinemaDataAccess.UpdateAsync(cinema);
-
         }
     }
 }

@@ -16,9 +16,9 @@ namespace Cinemas.DataAccess.Entities
         //Дата сеанса
         public string Date { get; set; }
         
-        public int? CinemaId => Cinema.Id;
+        public int? CinemaId { get; set; }
 
-        public int? MovieId => Movie.Id;
+        public int? MovieId { get; set; }
 
         public virtual Movie Movie { get; set; }
 

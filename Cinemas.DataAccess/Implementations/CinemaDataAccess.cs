@@ -23,7 +23,7 @@ namespace Cinemas.DataAccess.Implementations
 
         public async Task<Cinema> InsertAsync(CinemaUpdateModel cinema)
         {
-            var result = await this.Context.AddAsync(this.Mapper.Map<Cinema>(cinema));
+            var result = await this.Context.AddAsync(this.Mapper.Map<DataAccess.Entities.Cinema>(cinema));
 
             await this.Context.SaveChangesAsync();
 
@@ -33,7 +33,7 @@ namespace Cinemas.DataAccess.Implementations
         public async Task<IEnumerable<Cinema>> GetAsync()
         {
             return this.Mapper.Map<IEnumerable<Cinema>>(
-                await this.Context.Cinema.Include(x => x.Screening).ToListAsync());
+                await this.Context.Cinema.ToListAsync());
 
         }
 
@@ -69,7 +69,7 @@ namespace Cinemas.DataAccess.Implementations
             //TODO
             if(cinema == null)
                 throw new ArgumentNullException(nameof(cinema));
-            return await this.Context.Cinema.Include(x => x.Screening).FirstOrDefaultAsync(x => x.Id == cinema.Id);
+            return await this.Context.Cinema.FirstOrDefaultAsync(x => x.Id == cinema.Id);
         }
     }
 }
